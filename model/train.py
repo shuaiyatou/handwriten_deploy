@@ -13,8 +13,6 @@ batch_size = 128
 num_classes = 10
 nb_epochs = 12
 
-print(x_train[0])
-
 # 调整数据的shape
 if K.image_data_format() == 'channels_first':
     x_train = x_train.reshape(x_train.shape[0], 1, img_row, img_col)
