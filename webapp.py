@@ -1,3 +1,5 @@
+# coding=utf-8
+
 from model.load import init_model
 from flask import Flask, request, render_template
 from scipy.misc import imread, imresize

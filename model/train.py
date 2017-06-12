@@ -1,3 +1,5 @@
+# coding=utf-8
+
 from __future__ import print_function
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout

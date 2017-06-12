@@ -2,22 +2,27 @@
 
 ![](https://img.shields.io/coveralls/jekyll/jekyll.svg) ![](https://img.shields.io/github/license/mashape/apistatus.svg) ![](https://img.shields.io/github/issues-raw/badges/shields/website.svg)
 
-### 数据来源
+![](images/demo.PNG)
 
-[MNIST](http://yann.lecun.com/exdb/mnist/)
+#### 数据来源
 
-### 依赖安装
+使用的是[MNIST](http://yann.lecun.com/exdb/mnist/)，keras有内置数据集，使用起来更加方便。
+
+#### 依赖安装
  
- ```
- pip install flask
- pip install keras
- pip install numpy
- pip install scipy
- ```
+项目使用的是`python3.5`，`python2.7`照样可以运行。
+ 
+安装依赖
 
-### 使用
+```
+sudo pip install -r requirements.txt
+```
+
+#### 使用
 
 ```python
 python webapp.py
 ```
+
+然后就可以通过浏览器访问了。
 
