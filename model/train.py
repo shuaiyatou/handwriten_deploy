@@ -60,8 +60,9 @@ model.add(Dense(units=num_classes, activation='softmax'))
 model.compile(loss='categorical_crossentropy',
               optimizer='adam',
               metrics=['accuracy'])
+
 # 将模型结构保存图片
-plot_model(model, to_file='model.png', show_shapes=True)
+# plot_model(model, to_file='model.png', show_shapes=True)
 
 model.fit(x_train, y_train,
           batch_size=batch_size,

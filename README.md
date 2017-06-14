@@ -21,7 +21,8 @@ sudo pip install -r requirements.txt
 #### 使用
 
 ```python
-python webapp.py
+# 服务将在端口5000运行
+python webapp.py -p 5000
 ```
 
 然后就可以通过浏览器访问了。

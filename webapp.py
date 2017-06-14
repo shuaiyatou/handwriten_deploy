@@ -4,9 +4,9 @@ from model.load import init_model
 from flask import Flask, request, render_template
 from scipy.misc import imread, imresize
 import numpy as np
-import os
 import re
 import base64
+import argparse
 
 app = Flask(__name__)
 
@@ -46,6 +46,11 @@ def predict():
 
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
+
+    parser = argparse.ArgumentParser('some server parameters')
+    parser.add_argument('-p', help='server port', dest='port', type=int, default=5000)
+    args = parser.parse_args()
+
+    port = args.port
     # 监听所有网络
     app.run(host='0.0.0.0')
