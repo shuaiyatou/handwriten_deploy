@@ -8,6 +8,7 @@ import re
 import base64
 import argparse
 
+
 app = Flask(__name__)
 
 global model, graph
